@@ -1,0 +1,45 @@
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App background with food-related soft image and glassmorphism look */
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+  background: url('/background-food.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(6px);
+}
+
+/* Glass card style for reuse */
+.glass-card {
+  @apply bg-white/50 backdrop-blur-md border border-white/30 rounded-xl shadow-lg p-6;
+}
+
+/* For buttons */
+.btn-primary {
+  @apply px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('/background-food.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #333;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
