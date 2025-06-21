@@ -72,7 +72,7 @@ const Home = () => {
                 <h2 className="text-xl font-bold capitalize text-gray-900 dark:text-white">
                   {recipe.title}
                 </h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-gray-900 dark:text-gray-400">
                   {recipe.category} &bull; {recipe.cookingTime} mins
                 </p>
               </div>

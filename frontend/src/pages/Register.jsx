@@ -26,11 +26,11 @@ const Register = () => {
         backgroundImage: "url('/background-food.jpg')",
       }}
     >
-      <div className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md border border-white border-opacity-30">
-        <h1 className="text-4xl font-bold text-center text-white mb-6">Register</h1>
+      <div className="bg-red-300 bg-opacity-20 backdrop-blur-md p-4 rounded-2xl shadow-lg w-full max-w-md border border-red-800 border-opacity-30">
+        <h1 className="text-4xl font-bold text-center text-red-400 mb-6">Register</h1>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block text-white mb-1" htmlFor="username">
+            <label className="block text-red-400 mb-1" htmlFor="username">
               Username
             </label>
             <input
@@ -39,13 +39,13 @@ const Register = () => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-red-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
               placeholder="Enter your username"
             />
           </div>
 
           <div>
-            <label className="block text-white mb-1" htmlFor="email">
+            <label className="block text-red-400 mb-1" htmlFor="email">
               Email
             </label>
             <input
@@ -54,13 +54,13 @@ const Register = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-red-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
               placeholder="Enter your email"
             />
           </div>
 
           <div>
-            <label className="block text-white mb-1" htmlFor="password">
+            <label className="block text-red-400 mb-1" htmlFor="password">
               Password
             </label>
             <input
@@ -69,14 +69,14 @@ const Register = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-red-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
               placeholder="Enter your password"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition duration-300"
+            className="w-full py-3 bg-indigo-600 text-red-400 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300"
           >
             Register
           </button>

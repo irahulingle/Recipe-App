@@ -62,7 +62,7 @@ const RecipeDetail = () => {
       </ul>
 
       {/* Instructions */}
-      <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
         Instructions
       </h2>
       <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">

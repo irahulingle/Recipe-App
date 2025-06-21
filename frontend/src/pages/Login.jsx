@@ -25,11 +25,11 @@ const Login = () => {
         backgroundImage: "url('/background-food.jpg')",
       }}
     >
-      <div className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md border border-white border-opacity-30">
-        <h1 className="text-4xl font-bold text-center text-white mb-6">Login</h1>
+      <div className="bg-red-300 bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md border border-red-800 border-opacity-30">
+        <h1 className="text-4xl font-bold text-center text-red-400 mb-6">Login</h1>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block text-white mb-1" htmlFor="email">
+            <label className="block text-red-400 mb-1" htmlFor="email">
               Email
             </label>
             <input
@@ -44,7 +44,7 @@ const Login = () => {
           </div>
 
           <div>
-            <label className="block text-white mb-1" htmlFor="password">
+            <label className="block text-red-400 mb-1" htmlFor="password">
               Password
             </label>
             <input
@@ -60,7 +60,7 @@ const Login = () => {
 
           <button
             type="submit"
-            className="w-full py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition duration-300"
+            className="w-full py-3 bg-indigo-600 text-red-400 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300"
           >
             Login
           </button>
