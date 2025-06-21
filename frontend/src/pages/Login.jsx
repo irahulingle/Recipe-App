@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -20,13 +19,17 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-200">
-      <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Login</h1>
-        
+    <div
+      className="flex items-center justify-center min-h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/background-food.jpg')",
+      }}
+    >
+      <div className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md border border-white border-opacity-30">
+        <h1 className="text-4xl font-bold text-center text-white mb-6">Login</h1>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block text-gray-700 mb-1 font-medium" htmlFor="email">
+            <label className="block text-white mb-1" htmlFor="email">
               Email
             </label>
             <input
@@ -35,13 +38,13 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
               placeholder="Enter your email"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-1 font-medium" htmlFor="password">
+            <label className="block text-white mb-1" htmlFor="password">
               Password
             </label>
             <input
@@ -50,7 +53,7 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
               placeholder="Enter your password"
             />
           </div>

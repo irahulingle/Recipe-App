@@ -6,7 +6,6 @@ const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const { register } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -16,49 +15,62 @@ const Register = () => {
       await register(username, email, password);
       navigate("/");
     } catch (err) {
-      console.error("Register error:", err);
+      console.error("Registration error:", err);
     }
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-200">
-      <div className="bg-white/40 backdrop-blur-md shadow-lg p-8 rounded-2xl w-full max-w-md">
-        <h1 className="text-3xl font-semibold text-center text-gray-700 mb-6">Register</h1>
-
+    <div
+      className="flex items-center justify-center min-h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/background-food.jpg')",
+      }}
+    >
+      <div className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md border border-white border-opacity-30">
+        <h1 className="text-4xl font-bold text-center text-white mb-6">Register</h1>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block text-gray-700 mb-1">Username</label>
+            <label className="block text-white mb-1" htmlFor="username">
+              Username
+            </label>
             <input
               type="text"
+              id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400"
-              placeholder="Enter username"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
+              placeholder="Enter your username"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-1">Email</label>
+            <label className="block text-white mb-1" htmlFor="email">
+              Email
+            </label>
             <input
               type="email"
+              id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400"
-              placeholder="Enter email"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
+              placeholder="Enter your email"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-1">Password</label>
+            <label className="block text-white mb-1" htmlFor="password">
+              Password
+            </label>
             <input
               type="password"
+              id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400"
-              placeholder="Enter password"
+              className="w-full px-4 py-3 border border-white border-opacity-40 bg-white bg-opacity-10 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white placeholder-opacity-70"
+              placeholder="Enter your password"
             />
           </div>
 
